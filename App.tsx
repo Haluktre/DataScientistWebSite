@@ -36,7 +36,7 @@ const Navigation = () => {
             }
           >
             <LayoutDashboard size={18} />
-            <span>Yol Haritası</span>
+            <span className="hidden sm:inline">Yol Haritası</span>
           </NavLink>
           <NavLink 
             to="/stats" 
@@ -45,7 +45,7 @@ const Navigation = () => {
             }
           >
             <Lightbulb size={18} />
-            <span>İlginç Veriler</span>
+            <span className="hidden sm:inline">İlginç Veriler</span>
           </NavLink>
         </div>
       </div>

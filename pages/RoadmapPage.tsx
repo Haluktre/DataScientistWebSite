@@ -128,11 +128,11 @@ const IconMap: Record<string, React.ReactNode> = {
 
 const RoadmapCard = ({ step, index, isLeft }: { step: RoadmapStep; index: number; isLeft: boolean }) => {
   return (
-    <div className={`mb-8 flex justify-between items-start w-full ${isLeft ? 'flex-row-reverse' : ''}`}>
+    <div className={`mb-8 flex justify-between items-start w-full ${isLeft ? 'md:flex-row-reverse' : ''}`}>
       <div className="w-5/12 hidden md:block" />
       
-      {/* Center Point */}
-      <div className="z-20 w-8 h-8 absolute left-1/2 -translate-x-1/2 mt-6 rounded-full bg-slate-900 border-4 border-indigo-500 shadow-[0_0_15px_rgba(99,102,241,0.5)] flex items-center justify-center">
+      {/* Center Point - Adjusted for Mobile (left-4) vs Desktop (left-1/2) */}
+      <div className="z-20 w-8 h-8 absolute left-4 md:left-1/2 -translate-x-1/2 mt-6 rounded-full bg-slate-900 border-4 border-indigo-500 shadow-[0_0_15px_rgba(99,102,241,0.5)] flex items-center justify-center">
         <div className="w-2 h-2 bg-indigo-400 rounded-full" />
       </div>
 
@@ -223,7 +223,7 @@ export default function RoadmapPage() {
       </div>
 
       <div className="relative">
-        {/* Central Line */}
+        {/* Central Line - Fixed for mobile (left-4) and desktop (left-1/2) */}
         <div className="absolute left-4 md:left-1/2 transform md:-translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-indigo-500/20 via-purple-500/20 to-slate-800/20 rounded-full z-0">
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 text-slate-700">
                 <ArrowDown size={32} />
