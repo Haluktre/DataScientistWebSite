@@ -51,7 +51,7 @@ const Navigation = () => {
           </div>
 
           <a 
-            href="https://github.com/haluktre/DataScientistWebSite/" 
+            href="https://github.com/haluktre/DataScientistWebSite" 
             target="_blank" 
             rel="noopener noreferrer"
             className="hidden md:flex p-2.5 bg-slate-800/50 rounded-full border border-slate-700 text-slate-400 hover:text-white hover:bg-slate-700 hover:border-slate-600 transition-all backdrop-blur-sm"
@@ -70,7 +70,7 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
       <p>© 2024 Data Science Explorer. Tüm hakları saklıdır.</p>
       <div className="flex items-center gap-4">
-        <a href="https://github.com/haluktre/DataScientistWebSite/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition-colors flex items-center gap-1">
+        <a href="https://github.com/haluktre/DataScientistWebSite" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-400 transition-colors flex items-center gap-1">
           <Github size={16} />
           <span className="hidden md:inline">GitHub'da İncele</span>
         </a>
