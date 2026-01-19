@@ -27,21 +27,21 @@ const Navigation = () => {
             Data<span className="text-indigo-400">Science</span>
           </span>
         </NavLink>
-        
+
         <div className="flex items-center gap-3">
           <div className="flex items-center bg-slate-800/50 p-1 rounded-full border border-slate-700 backdrop-blur-sm">
-            <NavLink 
-              to="/" 
-              className={({ isActive }) => 
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
                 `flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${isActive ? 'bg-slate-700 text-indigo-300 shadow-sm border border-slate-600' : 'text-slate-400 hover:text-slate-200'}`
               }
             >
               <LayoutDashboard size={18} />
               <span className="hidden sm:inline">Yol Haritası</span>
             </NavLink>
-            <NavLink 
-              to="/stats" 
-              className={({ isActive }) => 
+            <NavLink
+              to="/stats"
+              className={({ isActive }) =>
                 `flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 ${isActive ? 'bg-slate-700 text-purple-300 shadow-sm border border-slate-600' : 'text-slate-400 hover:text-slate-200'}`
               }
             >
@@ -50,9 +50,9 @@ const Navigation = () => {
             </NavLink>
           </div>
 
-          <a 
-            href="https://github.com/haluktre/DataScientistWebSite" 
-            target="_blank" 
+          <a
+            href="https://github.com/haluktre/DataScientistWebSite"
+            target="_blank"
             rel="noopener noreferrer"
             className="hidden md:flex p-2.5 bg-slate-800/50 rounded-full border border-slate-700 text-slate-400 hover:text-white hover:bg-slate-700 hover:border-slate-600 transition-all backdrop-blur-sm"
             aria-label="GitHub Repository"
@@ -81,14 +81,14 @@ const Footer = () => (
 
 export default function App() {
   return (
-    <HashRouter>
+    <HashRouter basename="/DataScientistWebSite">
       <div className="min-h-screen bg-slate-950 text-slate-200 flex flex-col font-sans selection:bg-indigo-500/30 selection:text-indigo-200">
         <Navigation />
         <main className="flex-grow pt-24 pb-12 px-4 relative overflow-hidden">
-           {/* Background Gradient Orbs */}
-           <div className="fixed top-20 left-10 w-96 h-96 bg-indigo-900/20 rounded-full blur-3xl -z-10 pointer-events-none mix-blend-screen" />
-           <div className="fixed bottom-20 right-10 w-96 h-96 bg-purple-900/20 rounded-full blur-3xl -z-10 pointer-events-none mix-blend-screen" />
-           
+          {/* Background Gradient Orbs */}
+          <div className="fixed top-20 left-10 w-96 h-96 bg-indigo-900/20 rounded-full blur-3xl -z-10 pointer-events-none mix-blend-screen" />
+          <div className="fixed bottom-20 right-10 w-96 h-96 bg-purple-900/20 rounded-full blur-3xl -z-10 pointer-events-none mix-blend-screen" />
+
           <Routes>
             <Route path="/" element={<RoadmapPage />} />
             <Route path="/stats" element={<StatsPage />} />
