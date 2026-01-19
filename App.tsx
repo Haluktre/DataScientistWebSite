@@ -81,7 +81,7 @@ const Footer = () => (
 
 export default function App() {
   return (
-    <HashRouter basename="/DataScientistWebSite">
+    <HashRouter>
       <div className="min-h-screen bg-slate-950 text-slate-200 flex flex-col font-sans selection:bg-indigo-500/30 selection:text-indigo-200">
         <Navigation />
         <main className="flex-grow pt-24 pb-12 px-4 relative overflow-hidden">
